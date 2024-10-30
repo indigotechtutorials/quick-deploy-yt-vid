@@ -20,6 +20,11 @@ env:
   secret:
     - RAILS_MASTER_KEY
 
+volumes:
+  # host path:container path
+  - "/db:/rails/sqlite"
+  - "/storage:/rails/storage"
+
 # proxy: 
 #   ssl: true
 #   host: app.example.com
