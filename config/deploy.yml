@@ -25,9 +25,9 @@ volumes:
   - "/db:/rails/sqlite"
   - "/storage:/rails/storage"
 
-# proxy: 
-#   ssl: true
-#   host: app.example.com
+proxy: 
+  ssl: true
+  host: boldshorts.com
 
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 #
